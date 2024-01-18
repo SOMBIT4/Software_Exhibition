@@ -5,25 +5,22 @@ import 'package:breezybangladesh/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 
 class AndroidLargeTwoScreen extends StatelessWidget {
-  const AndroidLargeTwoScreen({Key? key})
-      : super(
-          key: key,
-        );
+  const AndroidLargeTwoScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: theme.colorScheme.onPrimaryContainer,
-        body: SizedBox(
-          height: 800.v,
+    return Scaffold(
+      backgroundColor: theme.colorScheme.onPrimaryContainer,
+      body: SingleChildScrollView(
+        child: SizedBox(
+          height: 850,
           width: double.maxFinite,
           child: Stack(
             alignment: Alignment.center,
             children: [
               CustomImageView(
                 imagePath: ImageConstant.imgImage2,
-                height: 1000.v,
+                height: 850.v,
                 width: 500.h,
                 alignment: Alignment.center,
               ),
@@ -42,7 +39,7 @@ class AndroidLargeTwoScreen extends StatelessWidget {
                       Align(
                         alignment: Alignment.center,
                         child: Text(
-                          "HELLO,WELCOME!",
+                          "HELLO, WELCOME!",
                           textAlign: TextAlign.center,
                           style: theme.textTheme.headlineLarge,
                         ),
@@ -64,18 +61,11 @@ class AndroidLargeTwoScreen extends StatelessWidget {
                       ),
                       Spacer(),
                       CustomElevatedButton(
-                        onPressed: (){
-                          Navigator.pushNamed(context, '/android_large_three_screen');
+                        onPressed: () {
+                          Navigator.pushNamed(
+                              context, '/android_large_three_screen');
                         },
                         text: "SIGN IN",
-                        margin: EdgeInsets.only(
-                          left: 18.h,
-                          right: 43.h,
-                        ),
-                      ),
-                      SizedBox(height: 48.v),
-                      CustomElevatedButton(
-                        text: "SIGN UP",
                         margin: EdgeInsets.only(
                           left: 19.h,
                           right: 43.h,
@@ -83,16 +73,34 @@ class AndroidLargeTwoScreen extends StatelessWidget {
                         buttonTextStyle:
                             CustomTextStyles.headlineSmallOnSecondaryContainer,
                       ),
+                      SizedBox(height: 48.v),
+                      Expanded(
+                        child: Column(children: [
+                          CustomElevatedButton(
+                            text: "SIGN UP",
+                            margin: EdgeInsets.only(
+                              left: 19.h,
+                              right: 43.h,
+                            ),
+                            buttonTextStyle: CustomTextStyles
+                                .headlineSmallOnSecondaryContainer,
+                          ),
+                        ]),
+                      ),
                       SizedBox(height: 11.v),
-                      Container(
-                        width: 123.h,
-                        margin: EdgeInsets.only(left: 106.h),
-                        child: Text(
-                          "or\nvia Social Media",
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          textAlign: TextAlign.center,
-                          style: theme.textTheme.bodyLarge,
+                      Expanded(
+                        child: Container(
+                          width: 123.h,
+                          margin: EdgeInsets.only(left: 106.h),
+                          child: SingleChildScrollView(
+                            child: Text(
+                              "or",
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
+                              textAlign: TextAlign.center,
+                              style: theme.textTheme.bodyLarge,
+                            ),
+                          ),
                         ),
                       ),
                       SizedBox(height: 7.v),
@@ -114,7 +122,6 @@ class AndroidLargeTwoScreen extends StatelessWidget {
     );
   }
 
-  /// Section Widget
   PreferredSizeWidget _buildAppBar(BuildContext context) {
     return CustomAppBar(
       leadingWidth: double.maxFinite,
@@ -128,7 +135,6 @@ class AndroidLargeTwoScreen extends StatelessWidget {
     );
   }
 
-  /// Section Widget
   Widget _buildRowNine(BuildContext context) {
     return Align(
       alignment: Alignment.center,
@@ -137,36 +143,38 @@ class AndroidLargeTwoScreen extends StatelessWidget {
           left: 7.h,
           right: 13.h,
         ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Padding(
-              padding: EdgeInsets.only(
-                top: 16.v,
-                bottom: 7.v,
+        child: SingleChildScrollView(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: EdgeInsets.only(
+                  top: 16.v,
+                  bottom: 7.v,
+                ),
+                child: Text(
+                  "BREEZY BANGLADESH",
+                  style: theme.textTheme.headlineSmall,
+                ),
               ),
-              child: Text(
-                "BREEZY BANGLADESH",
-                style: theme.textTheme.headlineSmall,
+              Container(
+                height: 55.v,
+                width: 31.h,
+                margin: EdgeInsets.only(left: 29.h),
+                padding: EdgeInsets.symmetric(
+                  horizontal: 5.h,
+                  vertical: 13.v,
+                ),
+                decoration: AppDecoration.fillBlueGray,
+                child: CustomImageView(
+                  imagePath: ImageConstant.imgMegaphone,
+                  height: 27.v,
+                  width: 20.h,
+                  alignment: Alignment.center,
+                ),
               ),
-            ),
-            Container(
-              height: 55.v,
-              width: 31.h,
-              margin: EdgeInsets.only(left: 29.h),
-              padding: EdgeInsets.symmetric(
-                horizontal: 5.h,
-                vertical: 13.v,
-              ),
-              decoration: AppDecoration.fillBlueGray,
-              child: CustomImageView(
-                imagePath: ImageConstant.imgMegaphone,
-                height: 27.v,
-                width: 20.h,
-                alignment: Alignment.center,
-              ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
