@@ -184,6 +184,9 @@ class SignUpScreen extends StatelessWidget {
 
   Widget _buildSignUp(BuildContext context) {
     return CustomElevatedButton(
+      onPressed: () {
+        Navigator.pushNamed(context, '/homepage_screen');
+      },
       height: 41.v,
       text: "Sign up",
       buttonStyle: CustomButtonStyles.fillGrayC,

@@ -25,4 +25,18 @@ class ImageConstant {
   static String imgBack34x56 = '$imagePath/img_back_34x56.png';
   static String imgNehaMaheenMah = '$imagePath/img_neha_maheen_mah.png';
   static String imageNotFound = 'assets/images/image_not_found.png';
+  // Homepage images
+  static String imgRashaduzzamanH = '$imagePath/img_rashaduzzaman_h.png';
+
+  static String imgRectangle11 = '$imagePath/img_rectangle_11.png';
+
+  static String imgContacts = '$imagePath/img_contacts.png';
+
+  static String imgLinkedin = '$imagePath/img_linkedin.svg';
+
+  static String imgArrowRight = '$imagePath/img_arrow_right.svg';
+
+  static String imgRectangle8 = '$imagePath/img_rectangle_8.png';
+
+  static String imgBack34x58 = '$imagePath/img_back_34x58.png';
 }

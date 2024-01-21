@@ -28,3 +28,17 @@ flutter:
           weight: 400
         - asset: assets/fonts/InterMedium.ttf
           weight: 500
+        - asset: assets/fonts/InterExtraLight.ttf
+          weight: 200
+    - family: Neuton
+      fonts: 
+        - asset: assets/fonts/NeutonBold.ttf
+          weight: 700
+    - family: Rozha One
+      fonts: 
+        - asset: assets/fonts/RozhaOneRegular.ttf
+          weight: 400
+    - family: Inria Sans
+      fonts: 
+        - asset: assets/fonts/InriaSansLight.ttf
+          weight: 300

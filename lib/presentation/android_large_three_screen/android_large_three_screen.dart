@@ -114,7 +114,9 @@ class AndroidLargeThreeScreen extends StatelessWidget {
                       right: 19.h,
                     ),
                     child: CustomElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/homepage_screen');
+                      },
                       text: "SIGN IN",
                       // margin: EdgeInsets.symmetric(horizontal: 14.h),
                       buttonStyle: CustomButtonStyles.fillyelloC,

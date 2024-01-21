@@ -15,7 +15,9 @@ class AppDecoration {
   static BoxDecoration get fillOnPrimaryContainer => BoxDecoration(
         color: theme.colorScheme.onPrimaryContainer,
       );
-
+  static BoxDecoration get fillOnPrimary => BoxDecoration(
+        color: theme.colorScheme.onPrimary,
+      );
   static BoxDecoration get fillSecondaryContainer => BoxDecoration(
         color: theme.colorScheme.secondaryContainer,
       );
@@ -45,6 +47,13 @@ class BorderRadiusStyle {
   // Circle borders
   static BorderRadius get circleBorder27 => BorderRadius.circular(
         27.h,
+      );
+  // Rounded borders
+  static BorderRadius get roundedBorder10 => BorderRadius.circular(
+        10.h,
+      );
+  static BorderRadius get roundedBorder20 => BorderRadius.circular(
+        20.h,
       );
 }
 

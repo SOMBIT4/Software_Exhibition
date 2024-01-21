@@ -1,3 +1,4 @@
+import 'package:breezybangladesh/presentation/homepage_screen/homepage_screen.dart';
 import 'package:breezybangladesh/presentation/sign_up_screen/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:breezybangladesh/presentation/android_large_one_screen/android_large_one_screen.dart';
@@ -13,6 +14,7 @@ class AppRoutes {
   static const String androidLargeThreeScreen = '/android_large_three_screen';
 
   static const String signUpScreen = '/sign_up_screen';
+  static const String homepageScreen = '/homepage_screen';
   static const String appNavigationScreen = '/app_navigation_screen';
 
   static Map<String, WidgetBuilder> routes = {
@@ -20,6 +22,7 @@ class AppRoutes {
     androidLargeTwoScreen: (context) => AndroidLargeTwoScreen(),
     androidLargeThreeScreen: (context) => AndroidLargeThreeScreen(),
     signUpScreen: (context) => SignUpScreen(),
+    homepageScreen: (context) => HomepageScreen(),
     appNavigationScreen: (context) => AppNavigationScreen()
   };
 }
