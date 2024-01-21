@@ -25,10 +25,21 @@ class CustomTextStyles {
         color: theme.colorScheme.onSecondaryContainer,
         fontSize: 24.fSize,
       );
+  static get headlineLargeSecondaryContainer =>
+      theme.textTheme.headlineLarge!.copyWith(
+        color: theme.colorScheme.secondaryContainer,
+        fontSize: 30.fSize,
+        fontWeight: FontWeight.w400,
+      );
   // Title text style
   static get titleLargeGray100 => theme.textTheme.titleLarge!.copyWith(
         color: appTheme.gray100,
         fontWeight: FontWeight.w600,
+      );
+  static get titleLargeOnPrimaryContainer =>
+      theme.textTheme.titleLarge!.copyWith(
+        color: theme.colorScheme.onPrimaryContainer,
+        fontWeight: FontWeight.w700,
       );
   static get titleLargeMedium => theme.textTheme.titleLarge!.copyWith(
         fontWeight: FontWeight.w500,

@@ -30,98 +30,99 @@ class AndroidLargeOneScreen extends StatelessWidget {
               horizontal: 13.h,
               vertical: 41.v,
             ),
-           // child: SingleChildScrollView(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  SizedBox(height: 45.v),
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Container(
-                      width: 296.h,
-                      margin: EdgeInsets.only(
-                        left: 2.h,
-                        right: 34.h,
-                      ),
-                      child: Text(
-                        "BREEZY BANGLADESH",
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: CustomTextStyles.displayMediumBlack90001,
-                      ),
+            // child: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                SizedBox(height: 45.v),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Container(
+                    width: 296.h,
+                    margin: EdgeInsets.only(
+                      left: 2.h,
+                      right: 34.h,
                     ),
-                  ),
-                  Spacer(
-                    flex: 61,
-                  ),
-                  SizedBox(
-                    width: 330.h,
                     child: Text(
-                      "Explore Your Favorite Journey",
+                      "BREEZY BANGLADESH",
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
-                      textAlign: TextAlign.center,
-                      style: theme.textTheme.displayMedium,
+                      style: CustomTextStyles.displayMediumBlack90001,
                     ),
                   ),
-                  Text(
-                    "Let’s make our life so a life",
+                ),
+                Spacer(
+                  flex: 61,
+                ),
+                SizedBox(
+                  width: 330.h,
+                  child: Text(
+                    "Explore Your Favorite Journey",
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
                     textAlign: TextAlign.center,
-                    style: CustomTextStyles.titleLargeSemiBold_1,
+                    style: theme.textTheme.displayMedium,
                   ),
-                  Spacer(
-                    flex: 38,
-                  ),
-                  SizedBox(
-                    height: 56.v,
-                    width: 152.h,
-                    child: Stack(
-                      alignment: Alignment.center,
-                      children: [
-                        CustomImageView(
-                          imagePath: ImageConstant.imgSettings,
-                          height: 56.v,
-                          width: 91.h,
-                          alignment: Alignment.centerLeft,
-                        ),
-                        Align(
-                          alignment: Alignment.center,
-                          child: Container(
-                            padding: EdgeInsets.symmetric(
-                              horizontal: 6.h,
-                              vertical: 10.v,
-                            ),
-                            decoration:
-                                AppDecoration.gradientBlueGrayToBlueGray.copyWith(
-                              borderRadius: BorderRadiusStyle.circleBorder27,
-                            ),
-                            child: SingleChildScrollView(
-                              child: Column(
-                                mainAxisSize: MainAxisSize.min,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  SizedBox(height: 2.v),
-                                  GestureDetector(
-                                    onTap: (){
-                                      Navigator.pushNamed(context, '/android_large_two_screen');
-                                    },
-                                    child: Text(
-                                      "swipe",
-                                      style: CustomTextStyles.headlineSmall24,
-                                    ),
+                ),
+                Text(
+                  "Let’s make our life so a life",
+                  textAlign: TextAlign.center,
+                  style: CustomTextStyles.titleLargeSemiBold_1,
+                ),
+                Spacer(
+                  flex: 38,
+                ),
+                SizedBox(
+                  height: 56.v,
+                  width: 152.h,
+                  child: Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      CustomImageView(
+                        imagePath: ImageConstant.imgSettings,
+                        height: 56.v,
+                        width: 91.h,
+                        alignment: Alignment.centerLeft,
+                      ),
+                      Align(
+                        alignment: Alignment.center,
+                        child: Container(
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 6.h,
+                            vertical: 10.v,
+                          ),
+                          decoration:
+                              AppDecoration.gradientBlueGrayToBlueGray.copyWith(
+                            borderRadius: BorderRadiusStyle.circleBorder27,
+                          ),
+                          child: SingleChildScrollView(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                SizedBox(height: 2.v),
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.pushNamed(
+                                        context, '/android_large_two_screen');
+                                  },
+                                  child: Text(
+                                    "CLICK",
+                                    style: CustomTextStyles.headlineSmall24,
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                           ),
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
-                ],
-              ),
-           // ),
+                ),
+              ],
+            ),
+            // ),
           ),
         ),
       ),

@@ -77,6 +77,9 @@ class AndroidLargeTwoScreen extends StatelessWidget {
                       Expanded(
                         child: Column(children: [
                           CustomElevatedButton(
+                            onPressed: () {
+                              Navigator.pushNamed(context, '/sign_up_screen');
+                            },
                             text: "SIGN UP",
                             margin: EdgeInsets.only(
                               left: 19.h,
@@ -94,8 +97,8 @@ class AndroidLargeTwoScreen extends StatelessWidget {
                           margin: EdgeInsets.only(left: 106.h),
                           child: SingleChildScrollView(
                             child: Text(
-                              "or",
-                              maxLines: 2,
+                              "or\ncontinue with",
+                              // maxLines: 2,
                               overflow: TextOverflow.ellipsis,
                               textAlign: TextAlign.center,
                               style: theme.textTheme.bodyLarge,
@@ -104,13 +107,17 @@ class AndroidLargeTwoScreen extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 7.v),
-                      CustomImageView(
-                        imagePath: ImageConstant.imgDeviconGoogle,
-                        height: 36.v,
-                        width: 43.h,
-                        margin: EdgeInsets.only(left: 146.h),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          GestureDetector(
+                            onTap: (() {}),
+                            child: Image.asset('assets/images/google.png',
+                                height: 60, width: 60),
+                          ),
+                        ],
                       ),
-                      SizedBox(height: 93.v),
+                      SizedBox(height: 120.v),
                     ],
                   ),
                 ),
@@ -157,22 +164,22 @@ class AndroidLargeTwoScreen extends StatelessWidget {
                   style: theme.textTheme.headlineSmall,
                 ),
               ),
-              Container(
-                height: 55.v,
-                width: 31.h,
-                margin: EdgeInsets.only(left: 29.h),
-                padding: EdgeInsets.symmetric(
-                  horizontal: 5.h,
-                  vertical: 13.v,
-                ),
-                decoration: AppDecoration.fillBlueGray,
-                child: CustomImageView(
-                  imagePath: ImageConstant.imgMegaphone,
-                  height: 27.v,
-                  width: 20.h,
-                  alignment: Alignment.center,
-                ),
-              ),
+              // Container(
+              //   height: 55.v,
+              //   width: 31.h,
+              //   margin: EdgeInsets.only(left: 29.h),
+              //   padding: EdgeInsets.symmetric(
+              //     horizontal: 5.h,
+              //     vertical: 13.v,
+              //   ),
+              //   decoration: AppDecoration.fillBlueGray,
+              //   child: CustomImageView(
+              //     imagePath: ImageConstant.imgMegaphone,
+              //     height: 27.v,
+              //     width: 20.h,
+              //     alignment: Alignment.center,
+              //   ),
+              // ),
             ],
           ),
         ),

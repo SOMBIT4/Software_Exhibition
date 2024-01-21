@@ -6,9 +6,16 @@ class AppDecoration {
   static BoxDecoration get fillBlueGray => BoxDecoration(
         color: appTheme.blueGray100,
       );
+  static BoxDecoration get fillErrorContainer => BoxDecoration(
+        color: theme.colorScheme.errorContainer.withOpacity(0.55),
+      );
+  static BoxDecoration get fillErrorContainer1 => BoxDecoration(
+        color: theme.colorScheme.errorContainer.withOpacity(0.6),
+      );
   static BoxDecoration get fillOnPrimaryContainer => BoxDecoration(
         color: theme.colorScheme.onPrimaryContainer,
       );
+
   static BoxDecoration get fillSecondaryContainer => BoxDecoration(
         color: theme.colorScheme.secondaryContainer,
       );

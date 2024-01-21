@@ -1,4 +1,5 @@
 import 'package:breezybangladesh/core/app_export.dart';
+import 'package:breezybangladesh/widgets/custom_elevated_button.dart';
 import 'package:breezybangladesh/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
 
@@ -60,7 +61,7 @@ class AndroidLargeThreeScreen extends StatelessWidget {
                     child: Padding(
                       padding: EdgeInsets.only(left: 26.h),
                       child: Text(
-                        "USERNAME",
+                        "EMAIL ADDRESS",
                         textAlign: TextAlign.center,
                         style: CustomTextStyles.titleLargeSemiBold,
                       ),
@@ -74,7 +75,7 @@ class AndroidLargeThreeScreen extends StatelessWidget {
                     ),
                     child: CustomTextFormField(
                       controller: userNameController,
-                      hintText: "username",
+                      hintText: "email address",
                     ),
                   ),
                   SizedBox(height: 18.v),
@@ -106,6 +107,21 @@ class AndroidLargeThreeScreen extends StatelessWidget {
                     ),
                   ),
                   Spacer(),
+                  SizedBox(height: 30.v),
+                  Padding(
+                    padding: EdgeInsets.only(
+                      left: 18.h,
+                      right: 19.h,
+                    ),
+                    child: CustomElevatedButton(
+                      onPressed: () {},
+                      text: "SIGN IN",
+                      // margin: EdgeInsets.symmetric(horizontal: 14.h),
+                      buttonStyle: CustomButtonStyles.fillyelloC,
+                      buttonTextStyle:
+                          CustomTextStyles.headlineSmallOnSecondaryContainer,
+                    ),
+                  ),
                   SizedBox(height: 23.v),
                   Align(
                     alignment: Alignment.centerRight,
@@ -140,22 +156,22 @@ class AndroidLargeThreeScreen extends StatelessWidget {
             style: theme.textTheme.headlineSmall,
           ),
         ),
-        Container(
-          height: 55.v,
-          width: 31.h,
-          margin: EdgeInsets.only(left: 22.h),
-          padding: EdgeInsets.symmetric(
-            horizontal: 5.h,
-            vertical: 13.v,
-          ),
-          decoration: AppDecoration.fillSecondaryContainer,
-          child: CustomImageView(
-            imagePath: ImageConstant.imgMegaphoneBlack90002,
-            height: 27.v,
-            width: 20.h,
-            alignment: Alignment.center,
-          ),
-        ),
+        // Container(
+        //   height: 55.v,
+        //   width: 31.h,
+        //   margin: EdgeInsets.only(left: 22.h),
+        //   padding: EdgeInsets.symmetric(
+        //     horizontal: 5.h,
+        //     vertical: 13.v,
+        //   ),
+        //   decoration: AppDecoration.fillSecondaryContainer,
+        //   child: CustomImageView(
+        //     imagePath: ImageConstant.imgMegaphoneBlack90002,
+        //     height: 27.v,
+        //     width: 20.h,
+        //     alignment: Alignment.center,
+        //   ),
+        // ),
       ],
     );
   }

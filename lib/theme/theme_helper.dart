@@ -118,8 +118,11 @@ class ColorSchemes {
   static final primaryColorScheme = ColorScheme.light(
     // Primary colors
     primary: Color(0XFFD9D9D9),
+    primaryContainer: Color(0XFF153A5D),
     secondaryContainer: Color(0XFFC1B96F),
-
+// Error colors
+    errorContainer: Color(0X3F000000),
+    onErrorContainer: Color(0XFF0B3D19),
     // On colors(text colors)
     onPrimary: Color(0XFF0B3D19),
     onPrimaryContainer: Color(0XFFFFFFFF),
@@ -145,7 +148,7 @@ class PrimaryColors {
   // Gray
   Color get gray100 => Color(0XFFF3F3F3);
   Color get gray900 => Color(0XFF260E0E);
-
+  Color get gray5008c => Color(0X8CA5A67D);
   // Yellow
   Color get yellow200A5 => Color(0XA5F9F09A);
 }

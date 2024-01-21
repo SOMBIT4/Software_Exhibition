@@ -22,6 +22,7 @@ class ImageConstant {
 
   static String imgMegaphoneBlack90002 =
       '$imagePath/img_megaphone_black_900_02.svg';
-
+  static String imgBack34x56 = '$imagePath/img_back_34x56.png';
+  static String imgNehaMaheenMah = '$imagePath/img_neha_maheen_mah.png';
   static String imageNotFound = 'assets/images/image_not_found.png';
 }
